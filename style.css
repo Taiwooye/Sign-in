@@ -1,0 +1,117 @@
+.right {
+    position: absolute;
+    width: 360px;
+    left: 58%;
+    height: 580px;
+    top: calc(50% - 440px / 2);
+    background: whitesmoke;
+    border-radius: 25px;
+    text-align: center; 
+}
+.title {
+  font-family: sansation;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 145px;
+  align-items: center;
+  font-family: sansation, san-serif;
+  color: black;
+}
+::placeholder {
+    color: black;
+    font-size: 18px;
+}
+.icon {
+    position: absolute;
+    padding: 24px 32px;
+    height: 75px;
+    width: 90px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-container {
+    background-image: url(./advert.JPG);
+    background-size: cover;
+    height: 100vh;
+}
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-top: -40px;
+}
+input[type="email"],
+input[type="password"] {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    padding: 20px 10px 20px 5px;
+    border: 2px solid black;
+    width: 280px;
+    height: 45px;
+    margin: 15px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    font-family: "scheherazade New", serif;
+}
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    font-weight: bold;
+    height: 18px;
+    width: 18px;
+}
+.keepme {
+    margin: 15px;
+    color: black;
+    font-family: "scheherazade New", serif;
+    font-weight: bold; 
+}
+button {
+    width: 260px;
+    height: 45px;
+    left: 1273px;
+    top: 780px;
+    font-family: "sansation", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background: black;
+    border-radius: 25px;
+}
+button:active {
+    background-color: rgb(219, 219, 81);
+    color: green;
+}
+button:hover {
+    color: gray;
+    box-shadow: 0px 0px 10px gray;
+    transition: 0.2s;
+}
+a{
+    text-align: center;
+    display: block;
+    margin: 18px;
+    color: black;
+    font-family: "scheherazade New", serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+@media only screen and (max-width: 700px) {
+    .contact-container {
+        background: linearGradient(138.56deg, #318adc 23.44%, #88183a 89.5%)
+    }
+    .right {
+        left: calc(68% - 500px / 2);
+    }
+}
+ 

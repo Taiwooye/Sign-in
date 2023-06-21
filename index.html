@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="right">
+        <h1 class="title">Sign-In</h1>
+        <img class="logo" src="./advert.JPG" alt="">
+<div class="username">
+    <img class="icon email-icon" src="./advert.JPG" alt="">
+    <input type="email"  id="user-input" iduser placeholder="@ E-Mail" pattern="^[a-zA-Z0-9]+@gmail\.com$" required>
+</div>
+<span id="correct"></span>
+<div class="password">
+<img class="icon password-icon" src="./advert.JPG" alt="">
+<input type="password" id="pass-input" placeholder="Password" pattern="^[a-zA-Z0-9]" required>
+</div>
+<span id="incorrect"></span>
+<div class="Keepme">
+    <input type="checkbox" checked="true">
+    Keep Me Logged In
+</div><br/>
+    <button onclick="Enter()">Go !</button><br/>
+<br/>
+<a href="#">Forgot Password?</a>
+        </div>
+        </div>
+</body>
+
+<script>
+
+let email = document.getElementById("user-input")
+    let password = document.getElementById("pass-input")
+    let correct = document.getElementById('correct')
+    let incorrect = document.getElementById('incorrect')
+
+
+    function Enter() {
+
+
+        if (
+            email.value == "@gmail.com" && password.value == "taiwo1122"
+        ) {
+            correct.innerHTML = 'Welcome Back User'
+            //  window.open('success.html', '_self');
+
+        }
+
+        else if (
+            email.value == "" && password.value == ""
+
+        ) {
+            incorrect.innerHTML = 'input field is empty'
+
+        }else if(email.value.length < 8 ){
+            incorrect.innerHTML = 'Must be up to 8 and Above'
+        }
+
+        else {
+             incorrect.innerHTML = 'acc not reg'
+            // window.open('error.html', '_self');
+        }
+
+
+    }
+
+
+
+
+
+</script>
+</html>
